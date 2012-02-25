@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS for Node.Philly */
+/* Tim Savery, Brett Whitham, Nuno Job, Chatham Financial */
+
+
+/* ____________________Universals */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+	font-size:14px;
+	background:#000;
+	width:100%;
+	height:100%;
+	line-height:18px;
+	letter-spacing:1px;
+}
+
+.clear {
+	clear:both;
+	display:block;
+}
+
+a {
+	text-decoration:none;
+	outline:none;
+	color:inherit;
+}
+
+a:visited {
+	text-decoration:none;
+	outline:none;
+}
+
+bgImage {
+	z-index:1;
+}
+
+/* end universals */
+
+
+/* ____________________ Section */
+
+section.global {
+	width: 980px;
+	height:auto;
+	margin:25px auto 0 auto;
+	z-index:100;
+	position:relative;
+	
+}
+
+header {
+	padding:0 15px;
+	margin-bottom:10px;
+	background:url(../images/tile-red.png) repeat top left;
+}
+
+img.logo {
+	margin:0 20px;
+	border-radius:2px;
+}
+
+section.abstract {
+	color:#fff;
+	padding-top: 15px;
+	border-radius:2px;
+	display:inline-block;
+	vertical-align:top;	
+	text-shadow:1px 1px 1px hsla(0, 0%, 0%, .7);
+}
+
+a.register {
+	color:#000;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px;
+	float:left;
+	margin:0 20px 0 0;
+	width:auto;
+	height:auto;
+	background:url(../images/tile-yellow.png) repeat top left;
+}
+
+section.leftcolumn {
+	width:660px;
+	display:inline-block;
+	padding:15px;
+	background:url(../images/tile-white.png) repeat top left;
+}
+
+.speakers {
+	color:#000;	
+}
+
+.speakers .speaker {
+	clear:both;
+	padding:10px;
+}
+
+.speakers .speaker .image {
+	float:left;
+	width:205px;
+}
+
+.speakers .speaker .bio {
+	float:left;
+	width:430px;
+}
+
+section.rightcolumn {	
+	vertical-align:top;
+	display:inline-block;
+	
+	margin-left:10px;
+	width:280px;
+}
+
+section.twitter {
+	color:#fff;	
+	padding:15px;
+	margin-bottom:10px;
+	background:url(../images/tile-blue.png) repeat top left;
+}
+
+section.twitter p {
+	padding-left: 30px;
+	background:url(../images/twitter-bird.png) no-repeat center left;
+}
+
+section.twitter p a {
+	margin-left:10px;
+	text-shadow:1px 1px 1px hsla(0, 0%, 0%, .7);
+}
+
+section.twitter p a:hover {
+	text-decoration:underline;
+}
+
+section.sponsors {
+	padding:15px;
+	background:url(../images/tile-white.png) repeat top left;
+}
+
+section.sponsors img {
+	width:100%;
+	text-align:center;
+	margin-top:10px;	
+}

@@ -1,0 +1,45 @@
+!!!
+html
+  head
+    title Node.Philly 2012
+    link(rel='stylesheet', href='/css/master.css')
+    //if lt IE 9
+      script(type='text/javascript', src='/js/IEcontainers.js')
+    script(type='text/javascript', src='/js/jquery1-7.js')
+    script(type='text/javascript', src='/js/imageScale.js')
+    script(type='text/javascript', src='/js/scale.js')
+  body
+    section.global
+      header
+        img.logo(src='/images/site-logo.jpg', alt='Node.Philly 2012')
+        section.abstract
+          h2 Node.Philly 2012
+          p An exclusive night with Node in downtown Philly
+          a.register(href='#') Get Your Ticket
+      section.leftcolumn
+        .speakers
+          .speaker
+            .image
+              img(src='/images/speakers/charlie-robbins.jpg')
+            .bio
+              h2 Charlie Robbins
+              h3 CEO, Nodejitsu
+              p Veteran of the enterprise software world, Charlie previously worked for Microsoft and consulted at several large financial institutions. After discovering Javascript and node.js, he left Wall Street to co-found Nodejitsu in 2010. He spends his free time making hot sauce, coding, contributing, and evangelizing open-source software in New York City. He holds a Bachelor of Engineering from McGill University and is a Masters Candidate at Columbia University.
+            .clear
+          .speaker
+            .image
+              img(src='/images/speakers/mikeal-rogers.jpg')
+            .bio
+              h2 Mikeal Rogers
+              h3 CEO, Pouch
+              p Mikeal is CEO and Co-Founder at Pouch and Curator of NodeConf. A common name in the node.js community Mikeal held prior positions at Yammer, CouchBase and Mozilla.
+            .clear
+      section.rightcolumn
+        section.twitter
+          p
+            a(href='http://www.twitter.com/NodePhilly', title='@NodePhilly', target='blank') @NodePhilly
+            a(href='https://www.twitter.com/#!/search/nodephilly', title='#nodephilly', target='blank') #nodephilly
+        section.sponsors
+          h1 Sponsors
+          img(src='/images/sponsors/nodejitsu.png')
+    img(src='/images/bg-bw.jpg', id='bgImage')
