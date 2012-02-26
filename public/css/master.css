@@ -56,9 +56,10 @@ section.global {
 }
 
 header {
-	padding:0 15px;
+	padding:0 0px;
 	margin-bottom:10px;
 	background:url(../images/tile-red.png) repeat top left;
+	border-radius:2px;
 }
 
 img.logo {
@@ -87,20 +88,58 @@ a.register {
 	background:url(../images/tile-yellow.png) repeat top left;
 }
 
-section.leftcolumn {
+.leftcolumn {
 	width:660px;
 	display:inline-block;
-	padding:15px;
+	padding:20px;
 	background:url(../images/tile-white.png) repeat top left;
+	border-radius:2px;
+}
+
+h1.title {
+	color:#666;
+	font-size:18px;
+	text-shadow:1px 1px 1px #fff;
+	margin-bottom:15px;
+	text-transform:uppercase;
+}
+
+.schedule {
+	color:#333;
+	margin-bottom:20px;
+}
+
+.schedule .item {
+	margin-bottom:15px;
+}
+
+.schedule .item .time {
+	float:left;
+	width:187px;
+	font-size:20px;
+	text-align: right;
+	text-shadow:1px 1px 1px #fff;
+	margin-right:20px;
+}
+
+.schedule .item .details {
+	float:left;
+	width:430px;
+}
+
+.schedule .item .details .speakername {
+	font-size:20px;
+	margin-bottom:5px;
+	text-shadow:1px 1px 1px #fff;
 }
 
 .speakers {
-	color:#000;	
+	color:#333;	
 }
 
 .speakers .speaker {
 	clear:both;
-	padding:10px;
+	margin-bottom:15px;
 }
 
 .speakers .speaker .image {
@@ -108,46 +147,65 @@ section.leftcolumn {
 	width:205px;
 }
 
+.speakers .speaker .image img {
+	border-radius:2px;
+}
+
 .speakers .speaker .bio {
 	float:left;
 	width:430px;
 }
 
-section.rightcolumn {	
+.speakers .speaker .bio .name {
+	margin-bottom:5px;
+	font-size:20px;
+	text-shadow:1px 1px 1px #fff;
+}
+
+.speakers .speaker .bio .title {
+	margin-bottom:5px;
+	font-size:16px;
+	text-shadow:1px 1px 1px #fff;
+}
+
+.rightcolumn {	
 	vertical-align:top;
 	display:inline-block;
 	
 	margin-left:10px;
-	width:280px;
+	width:270px;
 }
 
-section.twitter {
+.twitter {
 	color:#fff;	
 	padding:15px;
 	margin-bottom:10px;
 	background:url(../images/tile-blue.png) repeat top left;
+	border-radius:2px;
 }
 
-section.twitter p {
-	padding-left: 30px;
+.twitter p {
+	padding-left: 23px;
 	background:url(../images/twitter-bird.png) no-repeat center left;
 }
 
-section.twitter p a {
+.twitter p a {
+	font-size:12pt;
 	margin-left:10px;
-	text-shadow:1px 1px 1px hsla(0, 0%, 0%, .7);
+	text-shadow:1px 1px 1px #333;
 }
 
-section.twitter p a:hover {
+.twitter p a:hover {
 	text-decoration:underline;
 }
 
-section.sponsors {
+.sponsors {
 	padding:15px;
 	background:url(../images/tile-white.png) repeat top left;
+	border-radius:2px;
 }
 
-section.sponsors img {
+.sponsors img {
 	width:100%;
 	text-align:center;
 	margin-top:10px;	
