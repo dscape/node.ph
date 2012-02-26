@@ -104,6 +104,22 @@ h1.title {
 	text-transform:uppercase;
 }
 
+.venue {
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.venue img {
+	border-radius:2px;
+	box-shadow:0 0 2px 2px #999;
+}
+
+.venue span {
+	color:#333;
+	font-size:10px;
+	font-style:italic;	
+}
+
 .schedule {
 	color:#333;
 	margin-bottom:20px;
