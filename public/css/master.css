@@ -60,6 +60,7 @@ header {
 	margin-bottom:10px;
 	background:url(../images/tile-red.png) repeat top left;
 	border-radius:2px;
+	box-shadow:0 0 1px 1px #333;
 }
 
 img.logo {
@@ -94,6 +95,7 @@ a.register {
 	padding:20px;
 	background:url(../images/tile-white.png) repeat top left;
 	border-radius:2px;
+	box-shadow:0 0 1px 1px #333;
 }
 
 h1.title {
@@ -111,7 +113,7 @@ h1.title {
 
 .venue img {
 	border-radius:2px;
-	box-shadow:0 0 2px 2px #999;
+	box-shadow:0 0 1px 1px #333;
 }
 
 .venue span {
@@ -165,6 +167,9 @@ h1.title {
 
 .speakers .speaker .image img {
 	border-radius:2px;
+	width:185px;
+	height:185px;
+	box-shadow:0 0 1px 1px #333;
 }
 
 .speakers .speaker .bio {
@@ -198,6 +203,7 @@ h1.title {
 	margin-bottom:10px;
 	background:url(../images/tile-blue.png) repeat top left;
 	border-radius:2px;
+	box-shadow:0 0 1px 1px #333;
 }
 
 .twitter p {
@@ -219,6 +225,7 @@ h1.title {
 	padding:15px;
 	background:url(../images/tile-white.png) repeat top left;
 	border-radius:2px;
+	box-shadow:0 0 1px 1px #333;
 }
 
 .sponsors img {
