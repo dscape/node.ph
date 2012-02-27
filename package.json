@@ -1,5 +1,6 @@
 {
-    "name": "application-name"
+    "subdomain": "fuuuu"
+  , "name": "application-name"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
