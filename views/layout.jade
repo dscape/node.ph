@@ -11,11 +11,14 @@ html
   body
     section.global
       header
-        img.logo(src='/images/site-logo.jpg', alt='Node.Philly 2012')
-        section.abstract
-          h2 Node.Philly 2012
-          p An exclusive night with Node in downtown Philly
-          a.register(href='#') Get Your Ticket
+        table
+          tr
+            td
+              img.logo(src='/images/site-logo.jpg', alt='Node.Philly 2012')
+            td
+              h1 Node.Philly 2012
+              p Node.Philly is an exclusive evening event for anyone interested in Node.js. In addition to hearing from some of the most influential Node experts, there will be plenty of food and drink, hands-on demos and tons of chances to meet and collaborate with other members of the community.    
+              a.btn.btn-large.btn-primary(href='/') Register
       section.leftcolumn
         .venue
           img(src='/images/sciencecenter.png')
