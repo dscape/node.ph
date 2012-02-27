@@ -8,6 +8,7 @@ html
     script(type='text/javascript', src='/js/jquery1-7.js')
     script(type='text/javascript', src='/js/imageScale.js')
     script(type='text/javascript', src='/js/scale.js')
+    script(type='text/javascript', src='/js/tweets.js')
   body
     section.global
       header
@@ -73,7 +74,7 @@ html
             .bio
               .name James Halliday
               .title Founder, Browserling
-              p I create electronic doodles, start companies, play music, and tell computers what to do. Beep boop. http://browserling.com/ and http://testling.com
+              p I create electronic doodl.(id="tweets")es, start companies, play music, and tell computers what to do. Beep boop. http://browserling.com/ and http://testling.com
             .clear
           .speaker
             .image
@@ -85,9 +86,10 @@ html
             .clear
       section.rightcolumn
         section.twitter
-          p
+          p.header
             a(href='http://www.twitter.com/NodePhilly', title='@NodePhilly', target='blank') @NodePhilly
             a(href='https://www.twitter.com/#!/search/nodephilly', title='#nodephilly', target='blank') #nodephilly
+          div(id="tweets")
         section.sponsors
           h1.title Our Sponsors
           a(href='http://www.nodejitsu.com', target='_blank')

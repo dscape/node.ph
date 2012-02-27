@@ -199,18 +199,18 @@ h1.title {
 	border-radius:2px;
 }
 
-.twitter p {
+.twitter p.header {
 	padding-left: 23px;
 	background:url(../images/twitter-bird.png) no-repeat center left;
 }
 
-.twitter p a {
+.twitter p.header a {
 	font-size:12pt;
 	margin-left:10px;
 	text-shadow:1px 1px 1px #333;
 }
 
-.twitter p a:hover {
+.twitter p.header a:hover {
 	text-decoration:underline;
 }
 
