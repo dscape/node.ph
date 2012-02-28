@@ -1,6 +1,6 @@
 {
   "name": "node.ph",
-  "version": "0.0.1-9",
+  "version": "0.0.1-10",
   "private": true,
   "dependencies": {
     "express": "2.5.7",
@@ -12,5 +12,8 @@
   ],
   "scripts": {
     "start": "app.js"
+  },
+  "engines": {
+    "node": "v0.6.11-pre"
   }
 }

@@ -5,7 +5,7 @@ exports.index = function(req, res){
 };
 
 exports.tweets = function(req, res) {
-  var url = 'http://search.twitter.com/search.json?q=nodejs&result_type=recent&rpp=3&lang=en';
+  var url = 'http://search.twitter.com/search.json?q=%23nodephilly&result_type=recent&rpp=3&lang=en';
   if (req.params.last > 0) {
     url += '&since_id=' + req.params.last;
   }
@@ -25,8 +25,6 @@ exports.tweets = function(req, res) {
         result.tweets.push({
           id: tweet.id,
           user: tweet.from_user,
-          user_name: tweet.from_user_name,
-          user_profile_image: tweet.profile_image_url,
           text: tweet.text
         });
       });

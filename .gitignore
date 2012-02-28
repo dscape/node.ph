@@ -1,6 +1,0 @@
-.project
-node_modules/**/*
-public/**/*~
-routes/**/*~
-static/**/*~
-*~
