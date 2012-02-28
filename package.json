@@ -1,9 +1,13 @@
 {
-    "name": "node.ph"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.7"
-    , "request": "2.9.152"
+  "name": "node.ph",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.7",
+    "request": "2.9.152"
+  },
+  "subdomain": "nodephilly",
+  "scripts": {
+    "start": "app.js"
   }
 }
