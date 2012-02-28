@@ -10,19 +10,17 @@ function loadTweets() {
 
   $.get(url, function(result) {  	  	
     result.tweets.forEach(function(tweet) {
-      if ($('#tweets li[id="' + tweet.id + '"]').length == 0) {      
-        var markup = '\
-          <li id="' + tweet.id + '">\
-     	      <p class="user">' + injectUserLinks("@" + tweet.user) + '</p>\
-     	      <p class="text">' + injectUserLinks(tweet.text) + '</p>\
-       	  </li>\
-        ';
+      var markup = '\
+        <li id="' + tweet.id + '">\
+   	      <p class="user">' + injectUserLinks("@" + tweet.user) + '</p>\
+   	      <p class="text">' + injectUserLinks(tweet.text) + '</p>\
+     	  </li>\
+      ';
 
-        if (last_tweet_id == 0) {
-          $('#tweets').append(markup);
-        } else {
-          $('#tweets').prepend(markup);
-        }
+      if (last_tweet_id == 0) {
+        $('#tweets').append(markup);
+      } else {
+        $('#tweets').prepend(markup);
       }
     });
     

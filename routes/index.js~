@@ -31,7 +31,7 @@ console.log(url);
         });
       });
     }
-console.log(result.max_id);
+
     res.send(result);
   });
 };

@@ -1,9 +1,9 @@
 {
-    "name": "application-name"
+    "name": "node.ph"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
       "express": "2.5.7"
-    , "jade": ">= 0.20.3"
+    , "request": "2.9.152"
   }
 }
