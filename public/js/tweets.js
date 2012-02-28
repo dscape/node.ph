@@ -10,7 +10,9 @@ function loadTweets() {
 
   $.get(url, function(result) {  	  	
     for (var i=0; i<result.tweets.length; i++) {
-      if ($('#tweets li[id="' + result.tweets[i].id + '"]').length == 0) {      
+      var tweetCount = $('#tweets li').length;
+
+      if ($('#tweets li[id="' + result.tweets[i].id + '"]').length == 0) {
         var markup = '\
           <li id="' + result.tweets[i].id + '">\
      	      <p class="user">' + injectLinks("@" + result.tweets[i].user) + '</p>\
@@ -21,7 +23,13 @@ function loadTweets() {
         if (last_tweet_id == 0) {
           $('#tweets').append(markup);
         } else {
-          $('#tweets').prepend(markup);
+          if (tweetCount == 3) {
+            $('#tweets li:last').fadeOut(function() {
+              $('#tweets').prepend(markup);
+            });
+          } else {
+            $('#tweets').prepend(markup);
+          }
         }
       }
     }
