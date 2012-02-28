@@ -119,10 +119,14 @@ header p {
 header a.register {
 	display:inline-block;
 	background:url(../images/btn-register.png) no-repeat top right;
-	margin-top:20px 0 0 0;
-	width:137px;
-	height:137px;
+	margin:0 0 0 0;
+	width:70px;
+	height:80px;
 	float:left;
+	color:#fff;
+	font-size:18px;
+	padding:55px 35px 0 35px;
+	text-align:center;
 }
 
 /* end header */
@@ -138,8 +142,7 @@ section.content {
 }
 
 img.venue {
-	background:url(../images/science-center.jpg) no-repeat top left;
-	margin:0 0 15px 0;
+	margin:0;
 }
 
 p.caption {
@@ -152,11 +155,10 @@ p.caption {
 }
 
 ul {	
-	margin:20px 0 0 0;
+	margin:10px 0 0 0;
 }
 
-
-li.title {
+h1#title {
 	background:
 		url(../images/section-title-left.png) no-repeat top left,
 		url(../images/section-title-right.png) no-repeat top right,
@@ -166,16 +168,7 @@ li.title {
 	width:730px;
 	min-height:40px;
 	padding:22px 10px 10px 22px;
-}
-
-li.title a {
-	float:right;
-	height:38px;
-	background:url(../images/section-title-divide.png) repeat-y top left;
-	font-size:14px;
-	padding:15px 10px 0 15px;
-	margin:-13px 0 0 0;
-	color:#fff;
+	margin:15px 0 0 0;
 }
 
 li.schedule {
@@ -213,9 +206,6 @@ li.speakers img {
 	padding:0 25px 0 0;
 	margin:0 10px 0 0;
 	float:left;
-	width:auto;
-	height:auto;
-	margin:0 10px 0 0;
 }
 
 li.speakers section {
@@ -256,9 +246,9 @@ aside a.tweet-head {
 	display:block;
 	background:url(../images/tweets-header.png) no-repeat top left;
 	color:#fff;
-	width:135px;
+	width:145px;
 	height:44px;
-	padding:12px 0 0 65px;
+	padding:20px 0 0 55px;
 	line-height:14px;
 }
 
@@ -273,12 +263,17 @@ ul#tweets li p.user {
 	border-bottom:#867b6f thin solid;
 	padding:0 0 5px 0;
 	margin:0 0 5px 0;
+	
 }
 
-ul#sponsors li.title{
+ul#sponsors {
+	margin:0 0 25px 0;
+	}
+
+aside h1#title{
 	width:190px;
 	height:33px;
-	padding:12px 5px;
+	padding:20px 5px;
 	margin:0;
 	background:url(../images/sponsors-header.png) no-repeat top left;
 	color:#fff;
@@ -287,10 +282,10 @@ ul#sponsors li.title{
 	text-align:center;
 }
 
-ul#sponsors img.sponsor-logo {
+ul#sponsors a img.sponsor-logo {
 	max-width:180px;
 	height:auto;
-	margin:5px auto 5px auto;
+	margin:5px auto 25px auto;
 	display:block;
 }
 
