@@ -1,12 +1,15 @@
 {
   "name": "node.ph",
-  "version": "0.0.1-6",
+  "version": "0.0.1-9",
   "private": true,
   "dependencies": {
     "express": "2.5.7",
     "request": "2.9.152"
   },
   "subdomain": "nodephilly",
+  "domains": [
+    "www.node.ph"
+  ],
   "scripts": {
     "start": "app.js"
   }
