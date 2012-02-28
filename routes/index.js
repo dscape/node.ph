@@ -9,7 +9,7 @@ exports.tweets = function(req, res) {
   if (req.params.last > 0) {
     url += '&since_id=' + req.params.last;
   }
-console.log(url);
+
   request.get(url, function(error, response, body) {
     var result = {
       max_id: 0,
@@ -31,7 +31,7 @@ console.log(url);
         });
       });
     }
-console.log(result.max_id);
+
     res.send(result);
   });
 };

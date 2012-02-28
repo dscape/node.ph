@@ -9,12 +9,12 @@ function loadTweets() {
   var url = '/tweets/since/' + last_tweet_id;
 
   $.get(url, function(result) {  	  	
-    result.tweets.forEach(function(tweet) {
-      if ($('#tweets li[id="' + tweet.id + '"]').length == 0) {      
+    for (var i=0; i<result.tweets.length; i++) {
+      if ($('#tweets li[id="' + result.tweets[i].id + '"]').length == 0) {      
         var markup = '\
-          <li id="' + tweet.id + '">\
-     	      <p class="user">' + injectLinks("@" + tweet.user) + '</p>\
-     	      <p class="text">' + injectLinks(tweet.text) + '</p>\
+          <li id="' + result.tweets[i].id + '">\
+     	      <p class="user">' + injectLinks("@" + result.tweets[i].user) + '</p>\
+     	      <p class="text">' + injectLinks(result.tweets[i].text) + '</p>\
        	  </li>\
         ';
 
@@ -24,7 +24,7 @@ function loadTweets() {
           $('#tweets').prepend(markup);
         }
       }
-    });
+    }
     
     last_tweet_id = result.max_id;
   });
