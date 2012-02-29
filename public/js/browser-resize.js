@@ -4,13 +4,12 @@ var alreadyAppended = true;
 
 function adjustStyle(width) {
     width = parseInt(width);
-	if (width < 701) {
+	if (width < 961) {
 		if(alreadyAppended){
 			$('#tweets').remove();
 			$('ul').addClass('toggle');
 			$('h1#title').addClass('toggleView').wrap('<a>');
-			$(".toggle").hide();
-					
+			$(".toggle").hide();			
 		alreadyAppended = false;
 		}
     }
@@ -32,6 +31,7 @@ $(function() {
         adjustStyle($(this).width());
     });
 });
+
 $(document).ready(function(){
 	$('h1#title').addClass('toggleView').wrap('<a>');
 	$('a h1.toggleView').click(function() {
