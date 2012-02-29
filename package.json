@@ -1,9 +1,19 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.7"
-    , "jade": ">= 0.20.3"
+  "name": "node.ph",
+  "version": "0.0.2",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.7",
+    "request": "2.9.152"
+  },
+  "subdomain": "nodephilly",
+  "domains": [
+    "www.node.ph"
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "v0.6.x"
   }
 }
