@@ -116,8 +116,9 @@ header a.register {
 	position:fixed;
 	bottom:0;
 	left:0;
+	right:0;
+	
 	background:url(../images/footer-mobile-bg.png) repeat-x bottom left;
-	width:100%;
 	height:40px;
 	color:#fff;
 	font-size:18px;
@@ -184,7 +185,7 @@ aside a.tweet-head {
 	color:#867b6f;
 }
 
-ul#sponsors a img.sponsor-logo {
+section#sponsors a img.sponsor-logo {
 	width:auto;
 	height:auto;
 	margin:10px;

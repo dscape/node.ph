@@ -37,7 +37,7 @@ function loadTweets() {
     last_tweet_id = result.max_id;
   });
 
-  setTimeout("loadTweets()", 10000);
+  setTimeout("loadTweets()", 60000);
 };
 
 function injectLinks(text) {
