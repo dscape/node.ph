@@ -1,9 +1,5 @@
 var request = require('request');
 
-exports.index = function(req, res){
-  res.redirect('/index.html');
-};
-
 exports.tweets = function(req, res) {
   var url = 'http://search.twitter.com/search.json?q=%23nodephilly&result_type=recent&rpp=3&lang=en';
   if (req.params.last > 0) {

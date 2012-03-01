@@ -17,7 +17,6 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
 app.get('/tweets/since/:last', routes.tweets);
 
 app.listen(3000);
