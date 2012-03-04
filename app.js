@@ -19,10 +19,10 @@ var twit = new twitter({
     access_token_secret: 'BtpogtuaSHEjoSsRp8nT9DCz6wPfkzGEoHmPMDhk'
 });
 
-var recent_tweets = new Array(3);
+var recent_tweets = new Array(10);
 var recent_tweets_index = -1;
 
-twit.search('#nodephilly OR @NodePhilly', { rpp: 5 }, function(err, data) {
+twit.search('#nodephilly OR @NodePhilly', function(err, data) {
     if (err) { return; }
     
     for (var i=0; i<data.results.length; i++) {

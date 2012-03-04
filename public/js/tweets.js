@@ -1,5 +1,9 @@
 var socket = io.connect('/');
 socket.on('tweet', function(tweet) {
+	if (tweet == null) {
+		return;
+	}
+	
 	if ($('#tweets li[id="' + tweet.id + '"]').length == 0) {
 		var markup = '\
       		<li id="' + tweet.id + '">\
@@ -11,11 +15,13 @@ socket.on('tweet', function(tweet) {
 			var container = $(this);
 			var children = container.children('li');
 			
-			if (children.length >= 3) {
+			if (children.length >= 10) {
 	    		children.last().remove();
+	    		container.prepend(markup);
+	  		} else {
+	  			container.append(markup);
 	  		} 
 	  		
-	  		container.prepend(markup);	  		
 	  		container.dequeue();
 		});  		
    	}
