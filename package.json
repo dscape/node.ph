@@ -1,10 +1,11 @@
 {
   "name": "node.ph",
-  "version": "0.0.1-25",
+  "version": "0.0.1-28",
   "private": true,
   "dependencies": {
     "express": "2.5.7",
-    "request": "2.9.152"
+    "socket.io": "0.9.1-1",
+    "ntwitter": "0.2.10"
   },
   "subdomain": "nodephilly",
   "domains": [

@@ -7,9 +7,10 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/IEcontainers.js"></script>
 <![endif]-->
-<script src="/js/jquery1-7.js" type="text/javascript"></script>
-<script src="/js/browser-resize.js" type="text/javascript"></script>
-<script src="/js/tweets.js" type="text/javascript"></script>
+<script src="/js/jquery1-7.js"></script>
+<script src="/js/browser-resize.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/tweets.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link media="screen and (min-width:961px)" rel="stylesheet" type="text/css" href="/css/master.css" />
@@ -129,7 +130,8 @@
         <section id="sponsors">
             <a href="http://www.chathamfinancial.com//" target="_blank" title="ChathamFinancial.com"><img class="sponsor-logo" src="/images/sponsors/chatham-financial.png" alt="Chatham Financial Logo"/></a>
             <a href="http://www.nodejitsu.com/" target="_blank" title="Nodejitsu.com"><img class="sponsor-logo" src="/images/sponsors/nodejitsu.png" alt="Nodejitsu Logo"/></a>
-            <a href="http://www.voltdb.com/" target="_blank" title="VoltDB.com"><img class="sponsor-logo" src="/images/sponsors/voltdb.png" alt="VoltDB Logo"/></a>            
+            <a href="http://www.voltdb.com/" target="_blank" title="VoltDB.com"><img class="sponsor-logo" src="/images/sponsors/voltdb.png" alt="VoltDB Logo"/></a>
+            <a href="http://www.geekli.st/" target="_blank" title="geekli.st"><img class="sponsor-logo" src="/images/sponsors/geeklist.png" alt="Geeklist Logo"/></a>            
         </section>
         <a href="https://twitter.com/NodePhilly" class="tweet-head" title="Follow @NodePhilly on Twitter" target="_blank">Follow @NodePhilly</a>
         <ul id="tweets"></ul>
