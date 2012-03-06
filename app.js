@@ -47,7 +47,7 @@ twit.search('#nodephilly OR @NodePhilly', function(err, data) {
 	});
 });
 
-app.listen(3000);
+app.listen(80);
 
 io.sockets.on('connection', function(socket) {
 	for (var i=0; i<recent_tweets.length; i++) {
