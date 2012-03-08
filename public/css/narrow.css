@@ -1,0 +1,347 @@
+/* Narrow CSS for Node.Philly */
+
+
+/* ____________________Universals */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background:#fef4e3;
+	width:100%;
+	height:auto;
+	padding:0 0 5px 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+	font-size:13px;
+	color:#867b6f;
+	width:100%;
+	height:auto;
+	margin:5px auto 0 auto;
+	padding:0 0 3px 0;
+	line-height:25px;
+	letter-spacing:normal;
+}
+
+/*____________________ Remove items */
+section.venue, li.speakers img, #tweets {	
+	display:none;
+}
+
+.clear {
+	clear:both;
+}
+
+a {
+	color:#7accc8;
+}
+
+a, a:visited, a:hover {
+	text-decoration:none;
+	outline:none;
+}
+
+img {
+	outline:none;
+	border:none;
+}
+
+a img {
+	border:none;
+}
+
+ul {
+	list-style:none;
+	overflow:visible;
+}
+
+li {
+	list-style:none;
+}
+
+p, h1, h2, h3 {
+	color:#867b6f;
+}
+
+h1 {
+	font-weight:normal;
+}
+
+h2 {
+	font-weight:normal;
+}
+
+header, section, article, nav, footer, aside, p, ul {
+	display:block;
+	}
+
+/* end universals */
+
+
+/* ____________________ Header */
+
+
+header {
+	width:auto;
+	height:auto;
+	background:none;
+	padding:5px 5px 25px 5px;
+	text-align:center;
+	border-bottom:#867b6f thin solid;
+
+}
+
+.logo {
+	text-align:center;
+	float:none;
+	color:#CCC;
+	font-size:18px;
+	letter-spacing:2px;
+	  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, rgb(131, 120, 109) ),
+        color-stop( 1.000, rgb(52, 48, 42) ),
+        color-stop( 1.0, rgb(213, 213, 213) ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        rgb(131, 120, 109), 
+        rgb(52, 48, 42) 100.0%,
+        rgb(213, 213, 213) );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        rgb(131, 120, 109), 
+        rgb(52, 48, 42) 100.0%,
+        rgb(213, 213, 213) );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        rgb(131, 120, 109), 
+        rgb(52, 48, 42) 100.0%,
+        rgb(213, 213, 213) );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        rgb(131, 120, 109), 
+        rgb(52, 48, 42) 100.0%,
+        rgb(213, 213, 213) );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        rgb(131, 120, 109), 
+        rgb(52, 48, 42) 100.0%,
+        rgb(213, 213, 213) );
+
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-height:30px;
+	border-bottom:#000 thin solid;
+}
+
+header p {
+	width:auto;
+	height:auto;
+	padding:8px;
+	margin:20px 0 0 0;
+}
+
+header p a {
+	color:#867b6f;
+	text-decoration:underline;
+}
+
+header a.register {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:51%;
+	border-right:#C60 medium groove;
+	border-top:#963 thin solid;
+	background:
+		  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, #fbbf00 ),
+        color-stop( 1.000, #dd8900 ),
+        color-stop( 1.0, #d5d5d5 ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        #fbbf00, 
+        #dd8900 100.0%,
+        #d5d5d5 );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        #fbbf00, 
+        #dd8900 100.0%,
+        #d5d5d5 );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        #fbbf00, 
+        #dd8900 100.0%,
+        #d5d5d5 );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        #fbbf00, 
+        #dd8900 100.0%,
+        #d5d5d5 );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        #fbbf00, 
+        #dd8900 100.0%,
+        #d5d5d5 );
+
+;
+	height:20px;
+	color:#fff;
+	font-size:15px;
+	letter-spacing:1px;
+	padding:7px 0 7px 0;
+	display:block;
+	z-index:1000;
+}
+
+/* end header */
+section.schedule, section.speakers {
+	width:auto;
+	display:block;
+	padding:0 15px 0 15px;
+	border-bottom:#867b6f thin solid;
+
+}
+
+/* ____________________ Main Content */
+
+section.content {
+	width:auto;
+}
+
+ul {	
+	margin:10px 0 0 0;
+}
+
+h1#title{
+	font-size:18px;
+	width:auto;
+	display:block;
+	height:25px;
+	padding:20px;
+	margin:0 auto 0 auto;
+	cursor:pointer;
+	
+}
+.closed{
+	background:url(/images/dropdown-btn-closed.png) no-repeat center left;
+}
+.open{
+	background:url(/images/dropdown-btn-open.png) no-repeat center left;
+}
+
+li {
+	width:auto;
+	padding:0 5px 20px 5px;
+	background:none;
+	margin:10px 0 0 0;
+}
+
+
+li.schedule h1 {
+	font-weight:bold;
+	font-size:17px;
+	padding:0 0 5px 0;
+	margin:0;
+}
+/* end main content */
+
+
+
+/* ____________________ Sidebar */
+
+aside {
+	margin:0 0 0 0;
+}
+
+aside a.tweet-head {	
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:50%;
+	background:
+		  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, #73c5c1 ),
+        color-stop( 1.000, #307c77 ),
+        color-stop( 1.0, #d5d5d5 ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        #73c5c1, 
+        #307c77 100.0%,
+        #d5d5d5 );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        #73c5c1, 
+        #307c77 100.0%,
+        #d5d5d5 );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        #73c5c1, 
+        #307c77 100.0%,
+        #d5d5d5 );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        #73c5c1, 
+        #307c77 100.0%,
+        #d5d5d5 );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        #73c5c1, 
+        #307c77 100.0%,
+        #d5d5d5 );
+
+;
+	height:20px;
+	color:#fff;
+	font-size:15px;
+	letter-spacing:1px;
+	padding:7px 0 7px 0;
+	display:block;
+	border-top:#963 thin solid;
+}
+
+img.twitter-bird{
+	display:block;
+	margin:3px auto 0 auto;
+	width:auto;
+	height:auto;
+}
+
+section#sponsors a img.sponsor-logo {
+	width:auto;
+	height:auto;
+	margin:15px auto 0 auto;
+	padding:10px;
+	display:block;
+	float:left;
+}
+
+
+/* end sidebar */
