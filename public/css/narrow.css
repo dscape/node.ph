@@ -334,6 +334,10 @@ img.twitter-bird{
 	height:auto;
 }
 
+section#sponsors {
+	margin-bottom: 30px;
+}
+
 section#sponsors a img.sponsor-logo {
 	width:auto;
 	height:auto;

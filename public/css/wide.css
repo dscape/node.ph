@@ -90,12 +90,14 @@ header {
 	max-width:735px;
 	height:auto;
 	background:
-		url(/images/border-gray-blue.png) repeat-x bottom left;
+		url(/images/border-gray-blue.png) repeat-x bottom left,
+		url(/images/site-bg-main.jpg) repeat top left fixed;
 	margin:0 0 20px 0;
 	position:fixed;
 	top:25px;
 	left:25px;
 	padding:0 0 10px 0;
+	z-index:1000;
 }
 
 
@@ -103,12 +105,14 @@ section.venue {
 	width:735px;
 	height:auto;
 	background:
-		url(/images/border-gray-blue.png) repeat-x bottom left;
+		url(/images/border-gray-blue.png) repeat-x bottom left,
+		url(/images/site-bg-main.jpg) repeat top left fixed;
 	margin:0 0 20px 0;
 	position:fixed;
 	top:220px;
 	left:25px;
 	padding:0 0 25px 0;
+	z-index:1000;
 }
 
 section.twitter {

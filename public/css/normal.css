@@ -280,5 +280,8 @@ section#sponsors a img.sponsor-logo {
 	display:block;
 }
 
+section.venue, section.schedule, section.speakers {
+	float:left;
+}
 
 /* end sidebar */
