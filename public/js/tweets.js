@@ -15,7 +15,7 @@ socket.on('tweet', function(tweet) {
 			var container = $(this);
 			var children = container.children('li');
 			
-			if (children.length >= 10) {
+			if (children.length >= 8) {
 	    		children.last().remove();
 	    		container.prepend(markup);
 	  		} else {
