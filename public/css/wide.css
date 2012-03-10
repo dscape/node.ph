@@ -1,0 +1,332 @@
+/* Wide sheet for Node.Philly */
+/* ____________________Universals */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background:
+		url(/images/stain-bott-left.png) no-repeat bottom left fixed,
+		url(/images/stain-bott-right.png) no-repeat bottom right fixed,
+		url(/images/stain-top-right.png) no-repeat top right fixed,
+		url(/images/site-bg-shadow.jpg) repeat-x bottom left fixed,
+		url(/images/site-bg-main.jpg) repeat top left fixed;
+	width:100%;
+	height:auto;
+	padding:0 0 15px 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+	font-size:13px;
+	color:#867b6f;
+	width:98%;
+	height:auto;
+	line-height:25px;
+	letter-spacing:1px;
+}
+
+.clear {
+	clear:both;
+	display:block;
+}
+
+a {
+	color:#7accc8;
+}
+
+a, a:visited, a:hover {
+	text-decoration:none;
+	outline:none;
+}
+
+img {
+	outline:none;
+	border:none;
+}
+
+a img {
+	border:none;
+}
+
+ul {
+	list-style:none;
+	overflow:visible;
+}
+
+li {
+	list-style:none;
+}
+
+p, h1, h2, h3 {
+	color:#867b6f;
+}
+
+h1 {
+	font-weight:normal;
+}
+
+h2 {
+	font-weight:normal;
+}
+
+header, section.content, section.venue, section.schedule, section.speakers, aside {
+	display:inline-block;
+	}
+
+article, nav, footer, p, ul {
+	display:block;
+	}
+
+
+/* end universals */
+
+/* sections */
+
+header {
+	max-width:735px;
+	height:auto;
+	background:
+		url(/images/border-gray-blue.png) repeat-x bottom left,
+		url(/images/site-bg-main.jpg) repeat top left fixed;
+	margin:0 0 20px 0;
+	position:fixed;
+	top:25px;
+	left:25px;
+	padding:0 0 10px 0;
+	z-index:1000;
+}
+
+
+section.venue {
+	width:545px;
+	height:auto;
+	background:url(/images/divide-hollow.png) repeat-y top left;
+	/*background:
+		url(/images/border-gray-blue.png) repeat-x bottom left,
+		url(/images/site-bg-main.jpg) repeat top left fixed;*/
+	margin:0 0 20px 0;
+	position:fixed;
+	top:220px;
+	left:185px;
+	padding:0 0 5px 30px;
+	z-index:1000;
+}
+
+section.twitter {
+	width:735px;
+	height:auto;
+	background:url(/images/border-gray-blue.png) repeat-x top left;	
+	margin:0 0 0 0;
+	position:fixed;
+	top:470px;
+	left:25px;
+	padding:25px 0 10px 0;
+	display:block;
+}
+
+section.content {
+	width:auto;
+	height:auto;
+	position:absolute;
+	top:25px;
+	left:790px;
+	right:15px;
+	bottom:auto;
+	margin:0;
+}
+
+section.schedule, section.speakers {
+	width:35%;
+	height:auto;
+	float:left;
+}
+
+section.schedule {
+	margin:0 0 0 0;
+}
+
+section.speakers {
+	margin:0 2% 0 2%;
+}
+
+aside {
+	width:25.5%;
+	height:auto;
+	display:block;
+	float:right;
+}
+
+section#sponsors {
+	margin:0 0 0 0;
+}
+
+/* ____________________ Header */
+
+img.logo {
+	float:left;
+}
+
+header p {
+	width:520px;
+	height:auto;
+	margin:0 0 0 15px;
+	display:block;
+	float:right;
+	padding:0 15px 0 0;
+}
+
+header a.register {
+	display:block;
+	background:url(/images/btn-register.png) no-repeat top right;
+	margin:0 0 0 0;
+	width:70px;
+	height:80px;
+	color:#fff;
+	font-size:18px;
+	padding:55px 35px 0 35px;
+	text-align:center;
+	
+	position:absolute;
+	left:0;
+	top:230px;
+}
+
+/* end header */
+
+
+/* ____________________ Main Content */
+
+img.venue {
+	width:100%;
+	height:auto;
+	margin:0;
+}
+
+p.caption a {
+}
+
+ul {	
+	margin:10px 0 0 0;
+}
+
+h1#title {
+	background:url(/images/border-gray-blue.png) repeat-x bottom left;
+	color:#867b6f;
+	font-size:23px;
+	width:100%;
+	min-height:40px;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+}
+
+li.schedule {
+	width:auto;
+	padding:0;
+	background:none;
+	margin:0 0 15px 0;
+}
+
+li#last {
+	background:none;	
+}
+
+li.schedule h1 {
+	font-weight:bold;
+	font-size:17px;
+	border-bottom:#867b6f thin solid;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+}
+
+li.speakers {
+	background:url(/images/divide-hollow-horz.png) repeat-x bottom left;
+	width:100%;
+	height:auto;
+	padding:0 0 25px 0;
+	margin:0 0 25px 0;
+}
+
+li.speakers img {
+	width:40%;
+	max-width:200px;
+	height:auto;
+	padding:0 0 0 0;
+	margin:0 18px 5px 0;
+	float:left;
+}
+
+li.speakers p {
+	width:auto;
+}
+
+li:last-child {
+	background:none;
+	margin:0 0 5px 0;	
+}
+
+/* end main content */
+
+
+/* ____________________ Sidebar */
+
+aside a.tweet-head {
+	background:
+		url(/images/blue-bg-left-twitter.png) no-repeat top left,
+		url(/images/divide-hollow-horz.png) repeat-x bottom left;
+	color:#7accc8;
+	width:93%;
+	min-height:40px;
+	padding:5px 0 0 45px;
+	line-height:14px;
+	float:left;
+	font-size:16px;
+}
+
+ul#tweets {
+	width:100%;
+}
+
+ul#tweets li {
+	width:170px;
+	min-height:120px;
+	height:auto;
+	padding:0 5px 5px 5px;
+	line-height:15px;
+	float:left;
+	margin:15px 0 0 0;
+}
+
+ul#tweets li p.user {
+	border-bottom:#867b6f thin solid;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+	
+}
+
+aside h1#title{
+	width:190px;
+	height:33px;
+	padding:20px 5px;
+	margin:0;
+	background:url(/images/sponsors-header.png) no-repeat top left;
+	color:#fff;
+	font-size:14px;
+	line-height:15px;
+	text-align:center;
+}
+
+section#sponsors a img.sponsor-logo {
+	width:auto;
+	height:auto;
+	margin:0 auto 15px auto;
+	display:block;
+	padding:15px;
+	float:left;
+}
+
+
+/* end sidebar */

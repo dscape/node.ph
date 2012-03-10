@@ -1,8 +1,4 @@
-@charset "UTF-8";
 /* CSS for Node.Philly */
-/* Tim Savery, Brett Whitham, Nuno Job, Chatham Financial */
-
-
 /* ____________________Universals */
 
 * {
@@ -12,13 +8,13 @@
 
 html {
 	background:
-		url(../images/stain-bott-left.png) no-repeat bottom left fixed,
-		url(../images/stain-bott-right.png) no-repeat bottom right fixed,
-		url(../images/stain-top-right.png) no-repeat top right fixed,
-		url(../images/site-bg-shadow.jpg) repeat-x bottom left fixed,
-		url(../images/site-bg-main.jpg) repeat top left fixed;
+		url(/images/stain-bott-left.png) no-repeat bottom left fixed,
+		url(/images/stain-bott-right.png) no-repeat bottom right fixed,
+		url(/images/stain-top-right.png) no-repeat top right fixed,
+		url(/images/site-bg-shadow.jpg) repeat-x bottom left fixed,
+		url(/images/site-bg-main.jpg) repeat top left fixed;
 	width:100%;
-	height:auto;
+	height:100%;
 	padding:0 0 15px 0;
 }
 
@@ -79,13 +75,9 @@ h2 {
 	font-weight:normal;
 }
 
-header, section, article, nav, footer, aside, p {
+header, section, article, nav, footer, aside, p, ul {
 	display:block;
 	}
-
-bgImage {
-	z-index:1;
-}
 
 /* end universals */
 
@@ -95,18 +87,22 @@ bgImage {
 
 header {
 	width:980px;
-	height:170px;
+	min-height:170px;
+	height:auto;
 	background:
-		url(../images/border-gray-blue.png) repeat-x bottom left,
-		url(../images/site-bg-main.jpg) repeat top left;
+		url(/images/border-gray-blue.png) repeat-x bottom left,
+		url(/images/site-bg-main.jpg) repeat top left;
 	margin:0 0 15px 0;
 	position:fixed;
 	top:0;
 	padding:15px 0 0 0;
 }
 
-img.logo {
+.logo {
 	float:left;
+	background:url(/images/sitelogo.png) no-repeat top left;
+	min-width:150px;
+	min-height:150px;
 }
 
 header p {
@@ -116,9 +112,14 @@ header p {
 	float:left;
 }
 
+header p a {
+	color:#867b6f;
+	text-decoration:underline;
+}
+
 header a.register {
 	display:inline-block;
-	background:url(../images/btn-register.png) no-repeat top right;
+	background:url(/images/btn-register.png) no-repeat top right;
 	margin:0 0 0 0;
 	width:70px;
 	height:80px;
@@ -135,7 +136,7 @@ header a.register {
 /* ____________________ Main Content */
 
 section.content {
-	width:760px;
+	width:980px;
 	float:left;
 	clear:both;
 	margin:180px 15px 0 0;
@@ -145,13 +146,11 @@ img.venue {
 	margin:0;
 }
 
-p.caption {
-	color:#fff;
-	font-style:italic;
-	z-index:100;;
-	margin:-30px 0 0 0;
+p.caption a {
+	color:#867b6f;
 	padding:0 0 0 5px;
-	font-size:11px;
+	font-size:13px;
+	text-decoration:underline;
 }
 
 ul {	
@@ -160,9 +159,9 @@ ul {
 
 h1#title {
 	background:
-		url(../images/section-title-left.png) no-repeat top left,
-		url(../images/section-title-right.png) no-repeat top right,
-		url(../images/section-title-center.png) repeat-x top left;
+		url(/images/section-title-left.png) no-repeat top left,
+		url(/images/section-title-right.png) no-repeat top right,
+		url(/images/section-title-center.png) repeat-x top left;
 	color:#fff;
 	font-size:23px;
 	width:730px;
@@ -175,7 +174,7 @@ li.schedule {
 	float:left;
 	width:145px;
 	padding:0 20px 0 10px;
-	background:url(../images/divide-hollow.png) repeat-y top right;
+	background:url(/images/divide-hollow.png) repeat-y top right;
 	margin:20px 15px 0 0;
 }
 
@@ -192,38 +191,24 @@ li.schedule h1 {
 }
 
 li.speakers {
-	background:url(../images/border-gray-blue.png) repeat-x bottom left;
+	background:url(/images/border-gray-blue.png) repeat-x bottom left;
 	width:740px;
 	height:auto;
-	padding:0 10px 25px 10px;
+	padding:0 10px 20px 10px;
 	margin:15px 0 0 0;
 }
 
 li.speakers img {
 	width:195px;
 	height:185px;
-	background:url(../images/divide-hollow.png) repeat-y top right;
+	background:url(/images/divide-hollow.png) repeat-y top right;
 	padding:0 25px 0 0;
-	margin:0 10px 0 0;
+	margin:0 15px 25px 0;
 	float:left;
-}
-
-li.speakers section {
-	float:left;
-	width:500px;
-	margin:0 0 0 10px;
-}
-
-li.speakers h1, h2 {
-	float:left;
-}
-
-li.speakers h2 {
-	font-size:14px;
 }
 
 li.speakers p {
-	clear:both;
+	width:auto;
 }
 
 li:last-child {
@@ -238,18 +223,24 @@ li:last-child {
 aside {
 	width:200px;
 	height:auto;
-	float:left;
-	margin:180px 0 0 0;
+	float:right;
+	margin:0 0 0 0;
 }
 
 aside a.tweet-head {
 	display:block;
-	background:url(../images/tweets-header.png) no-repeat top left;
+	background:url(/images/tweets-header.png) no-repeat top left;
 	color:#fff;
 	width:145px;
 	height:44px;
 	padding:20px 0 0 55px;
 	line-height:14px;
+}
+
+ul#tweets {
+	width:525px;
+	float:left;
+	margin:0;
 }
 
 ul#tweets li {
@@ -266,7 +257,7 @@ ul#tweets li p.user {
 	
 }
 
-ul#sponsors {
+section#sponsors {
 	margin:0 0 25px 0;
 	}
 
@@ -275,19 +266,22 @@ aside h1#title{
 	height:33px;
 	padding:20px 5px;
 	margin:0;
-	background:url(../images/sponsors-header.png) no-repeat top left;
+	background:url(/images/sponsors-header.png) no-repeat top left;
 	color:#fff;
 	font-size:14px;
 	line-height:15px;
 	text-align:center;
 }
 
-ul#sponsors a img.sponsor-logo {
-	max-width:180px;
+section#sponsors a img.sponsor-logo {
+	width:auto;
 	height:auto;
-	margin:5px auto 25px auto;
+	margin:0 auto 25px auto;
 	display:block;
 }
 
+section.venue, section.schedule, section.speakers {
+	float:left;
+}
 
 /* end sidebar */
